@@ -13,7 +13,7 @@ public class Client {
 			Hello obj = (Hello)Naming.lookup("rmi://" + hostname + "/Hello");
 
 			int[] b=obj.generate();
-			obj.registerclient();
+			//obj.registerclient();
 			System.out.println(Arrays.toString(b)); // print array of generated numbers
 
 		} catch (Exception e) {
